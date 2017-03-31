@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.asus.dept_management_apps.LibraryActivity">
+
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text = "Seminar Library"
+        android:id = "@+id/textView"
+
+        android:layout_centerHorizontal = "true"
+        android:textColor = "#ff7aff24"
+        android:textSize = "20dp" />
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text = "Selected by book's name"
+        android:id = "@+id/textView2"
+        android:layout_below="@+id/textView"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spin"
+        android:layout_below="@+id/textView2"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TvName"
+        android:layout_below="@+id/spin"
+        android:hint="Book Name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Tvtp"
+        android:layout_below="@+id/TvName"
+        android:hint="Book Type"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TvAthr"
+        android:layout_below="@+id/Tvtp"
+        android:hint="Author Name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TvEdtn"
+        android:layout_below="@+id/TvAthr"
+        android:hint="Edition"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TvTnum"
+        android:layout_below="@+id/TvEdtn"
+        android:hint="Total Number"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TvRnum"
+        android:layout_below="@+id/TvTnum"
+        android:hint="Present Number"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TvRnum"
+        android:text="Save"
+        android:id="@+id/btnsave"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TvRnum"
+        android:text="Edit"
+        android:layout_toRightOf="@+id/btnsave"
+        android:id="@+id/btnedt"/>
+    <Button
+        android:layout_toRightOf="@+id/btnedt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TvRnum"
+
+        android:text="Show all"
+        android:id="@+id/btnshow"/>
+
+
+</RelativeLayout>

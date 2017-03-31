@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.asus.dept_management_apps.RoutineActivity">
+
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text = "Class Routine"
+        android:id = "@+id/textView"
+
+        android:layout_centerHorizontal = "true"
+        android:textColor = "#ff7aff24"
+        android:textSize = "20dp" />
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text = "Selected by day"
+        android:id = "@+id/textView2"
+        android:layout_below="@+id/textView"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spin"
+        android:layout_below="@+id/textView2"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TvDay"
+        android:layout_below="@+id/spin"
+        android:hint="Day"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fst"
+        android:layout_below="@+id/TvDay"
+        android:text="8:15 am"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Tvfstcls"
+        android:layout_below="@+id/TvDay"
+        android:hint="Course and Teacher"
+        android:layout_toRightOf="@+id/fst"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/snd"
+        android:layout_below="@+id/Tvfstcls"
+        android:text="9:10 am"
+        android:textSize="20dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Tvtp"
+        android:layout_below="@+id/Tvfstcls"
+        android:layout_toRightOf="@+id/snd"
+        android:hint="Course and Teacher"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/thrd"
+        android:layout_below="@+id/Tvtp"
+        android:text="10:05 am"
+        android:textSize="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TvAthr"
+        android:layout_toRightOf="@+id/thrd"
+        android:layout_below="@+id/Tvtp"
+        android:hint="Course and Teacher"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forth"
+        android:layout_below="@+id/TvAthr"
+        android:text="11:00 am"
+        android:textSize="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TvEdtn"
+        android:layout_toRightOf="@+id/forth"
+        android:layout_below="@+id/TvAthr"
+        android:hint="Course and Teacher"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fifth"
+        android:layout_below="@+id/TvEdtn"
+        android:text="11:55 am"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TvTnum"
+        android:layout_toRightOf="@+id/fifth"
+        android:layout_below="@+id/TvEdtn"
+        android:hint="Course and Teacher"/>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TvTnum"
+        android:text="Save"
+        android:id="@+id/btnsave"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TvTnum"
+        android:text="Edit"
+        android:layout_toRightOf="@+id/btnsave"
+        android:id="@+id/btnedt"/>
+    <Button
+        android:layout_toRightOf="@+id/btnedt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TvTnum"
+
+        android:text="Show all"
+        android:id="@+id/btnshow"/>
+
+
+</RelativeLayout>
